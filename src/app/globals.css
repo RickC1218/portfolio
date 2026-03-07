@@ -78,6 +78,15 @@
 }
 
 :root {
-  background-color: var(--color-bg-main);
+  background-image: radial-gradient(
+    circle at center,
+    var(--color-bg-card) 0%,
+    var(--color-bg-main) 100%
+  );
+  background-attachment: fixed;
   color: var(--color-accent);
+}
+
+body {
+  font-family: var(--font-sans);
 }
