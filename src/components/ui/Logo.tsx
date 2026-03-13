@@ -1,10 +1,12 @@
 interface LogoProps {
   text: string
-  size: 'md' | 'lg'
+  size: 'xs' | 'sm' | 'md' | 'lg'
 }
 
 export const Logo = ({ text, size }: LogoProps) => {
   const sizes = {
+    xs: ' body-p4',
+    sm: ' body-p2',
     md: 'title-h3',
     lg: 'title-h2'
   }
