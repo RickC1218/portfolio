@@ -1,7 +1,11 @@
 import Logo from '../ui/Logo'
 import { Divider } from '../ui/Divider'
 import { CustomLink as Link } from '../ui/Link'
-import { Languages, LayoutPanelLeft, Rows3 } from 'lucide-react'
+import {
+  IconLayoutBoardFilled,
+  IconLanguage,
+  IconLayoutListFilled,
+} from '@tabler/icons-react'
 
 export const Navbar = () => {
   return (
@@ -15,16 +19,16 @@ export const Navbar = () => {
           <Divider size={8} />
           <Link href='#experience'>Experience</Link>
           <Divider size={8} />
-          <aside className='cursor-pointer bg-bg-main/40 border border-secondary px-3 py-1 rounded-lg flex items-center gap-3 hover:bg-bg-main/60 transition-colors'>
-            <Languages className='text-primary w-5 h-5' />
+          <button className='cursor-pointer bg-bg-main/40 border border-secondary px-3 py-1 rounded-lg flex items-center gap-3 hover:bg-bg-main/60 transition-colors'>
+            <IconLanguage stroke={1.75} className='text-primary w-5 h-5' />
             <span className='text-p4 font-bold text-accent'>EN</span>
-          </aside>
+          </button>
           <Divider size={8} />
-          <aside className='cursor-pointer bg-bg-main/40 border border-secondary p-1 rounded-lg flex items-center gap-1 hover:border-primary/30 transition-all'>
-            <LayoutPanelLeft className='text-muted w-6 h-6 p-1 rounded-sm hover:bg-bg-main/60' />
+          <button className='cursor-pointer bg-bg-main/40 border border-secondary p-1 rounded-lg flex items-center gap-1 hover:border-primary/30 transition-all'>
+            <IconLayoutBoardFilled className='text-muted w-6 h-6 p-1 rounded-sm hover:bg-bg-main/60' />
             <Divider size={4} />
-            <Rows3 className='text-primary w-6 h-6 p-1 rounded-sm hover:bg-bg-main/60' />
-          </aside>
+            <IconLayoutListFilled className='text-primary w-6 h-6 p-1 rounded-sm hover:bg-bg-main/60' />
+          </button>
         </div>
       </div>
     </nav>

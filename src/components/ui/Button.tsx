@@ -14,7 +14,7 @@ export const Button = ({
   onClick
 }: ButtonProps) => {
 
-  const baseStyles = 'rounded-lg transition-all duration-300 active:scale-95 hover:shadow-[0_8px_25px_0_rgba(0,0,0,0)]';
+  const baseStyles = 'rounded-lg w-20 transition-all duration-300 active:scale-95 hover:shadow-[0_8px_25px_0_rgba(0,0,0,0)]';
 
   const variants = {
     primary: 'bg-primary text-secondary hover:shadow-primary/25',

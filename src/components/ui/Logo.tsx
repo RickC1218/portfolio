@@ -11,11 +11,11 @@ export const Logo = ({ text, size }: LogoProps) => {
     lg: 'title-h2'
   }
   return (
-    <div className={`${sizes[size]} flex items-center gap-1 select-none`}>
+    <aside className={`${sizes[size]} flex items-center gap-1 select-none`}>
       <span className='text-primary font-bold'>&lt;</span>
       <span className='text-white'>{text}</span>
       <span className='text-primary font-bold'> /&gt;</span>
-    </div>
+    </aside>
   )
 }
 
