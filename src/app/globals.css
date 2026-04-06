@@ -77,6 +77,10 @@
   font-weight: var(--font-weight-bold);
 }
 
+@utility drop-shadow-primary {
+  filter: drop-shadow(0 8px 25px color-mix(in srgb, var(--color-primary), transparent 50%));
+}
+
 :root {
   background-image: radial-gradient(
     circle at center,
