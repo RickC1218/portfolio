@@ -1,22 +1,26 @@
-import ExperienceCard from '@/components/cards/ExperienceCard';
-import ProjectCard from '@/components/cards/ProjectCard';
-import { Navbar } from '@/components/sections/Navbar';
-import Avatar from '@/components/ui/Avatar';
+import Feel from '@/components/sections/Feel'
+import Projects from '@/components/sections/Projects'
+import Experiences from '@/components/sections/Experiences'
+import Skills from '@/components/sections/Skills'
 
 export default function Home() {
   return (
-    <main className='min-h-screen max-w-7xl mx-auto px-6 py-10 flex flex-col gap-12'>
-      <Navbar />
-      <div className='mt-24 flex flex-col gap-3'>
-        <Avatar size='short' />
-        <Avatar size='large'/>
-        <ProjectCard type='large' />
-        <ProjectCard type='small' />
-        <ExperienceCard type='large' />
-        <ExperienceCard type='large' />
-        <ExperienceCard type='small' />
-        <ExperienceCard type='small' />
-      </div>
-    </main>
-  );
+    <div className='flex flex-col gap-16 pb-20'>
+      <section id='hero' className='scroll-mt-32'>
+        <Feel size='large' />
+      </section>
+
+      <section id='projects' className='scroll-mt-28'>
+        <Projects />
+      </section>
+
+      <section id='skills' className='scroll-mt-28'>
+        <Skills />
+      </section>
+
+      <section id='experience' className='scroll-mt-28'>
+        <Experiences />
+      </section>
+    </div>
+  )
 }

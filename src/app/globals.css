@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-primary: #38BDF8;
   --color-secondary: #224463;
@@ -22,6 +26,13 @@
   --font-weight-bold: 700;
   --font-weight-medium: 500;
   --font-weight-regular: 400;
+
+  --animate-scroll: scroll 30s linear infinite;
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-33.33%); }
+  }
 }
 
 @utility title-h1 {
@@ -49,7 +60,7 @@
 
 @utility body-p1 {
   font-size: var(--text-p1);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-regular);
 }
 
 @utility body-p2 {
